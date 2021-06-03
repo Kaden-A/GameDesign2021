@@ -31,5 +31,6 @@ for i in range(1,11):  #beginning of range is included end of range is not
 for var in range(1, 11):
     print()
     for i in range (1, 11):
-        print (i * var,  end= "  ")
+        print (i * var,  end= "   ")
+     
     
