@@ -1,0 +1,31 @@
+print("***********************")
+print("*        Run          *")
+print("*        Menu         *")
+print("*                     *")
+print("*   1.-Easy           *")
+print("*   2.-Medium         *")
+print("*   3.-Hard           *")
+print("*   4.-High Scores    *")
+print("*   5.-End Game       *")
+print("***********************")
+answer=(input())
+while "5" in answer:
+    print("Error: Cannot perform the requested operation at this time")
+    answer="changed"
+print("Would you like to return to the main menu?")
+answer=(input())
+while "yes" in answer:
+    print("***********************")
+    print("*        Run          *")
+    print("*        Menu         *")
+    print("*                     *")
+    print("*   1.-Easy           *")
+    print("*   2.-Medium         *")
+    print("*   3.-Hard           *")
+    print("*   4.-High Scores    *")
+    print("*   5.-End Game       *")
+    print("***********************")
+    answer=(input())
+while "no" in answer:
+    print("OK, thank you for playing")
+    answer="changed"
