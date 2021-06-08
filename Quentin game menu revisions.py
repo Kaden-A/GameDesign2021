@@ -49,4 +49,4 @@ while x !=4:
         score()
 
 
-print("Goodbye, Thank you for playing")
+print("Thank you for playing")
