@@ -12,9 +12,9 @@ answer=(input())
 while "5" in answer:
     print("Error: Cannot perform the requested operation at this time")
     answer="changed"
-print("Would you like to return to the main menu?")
+print("Would you like to exit the game?")
 answer=(input())
-while "yes" in answer:
+while "no" in answer:
     print("***********************")
     print("*        Run          *")
     print("*        Menu         *")
@@ -26,6 +26,6 @@ while "yes" in answer:
     print("*   5.-End Game       *")
     print("***********************")
     answer=(input())
-while "no" in answer:
+while "yes" in answer:
     print("OK, thank you for playing")
     answer="changed"
