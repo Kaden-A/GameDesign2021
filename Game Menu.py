@@ -27,5 +27,7 @@ while "no" in answer:
     print("***********************")
     answer=(input())
 while "yes" in answer:
-    print("OK, thank you for playing")
+    txt= "thank you for playing"
+    x=txt.capitalize()
+    print(x)
     answer="changed"
