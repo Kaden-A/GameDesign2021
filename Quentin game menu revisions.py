@@ -66,36 +66,48 @@ while x !=7:  #loop is conditioned to an event
         
 
     if(x==2):
-        print("Input a phrase with lower case letters")
-        answer=input()
-        print(answer.upper())
-        answer=answer.upper()
-        pause()
+        convert=True
+        while convert:
+            print("Input a phrase with lower case letters")
+            answer=input()
+            print(answer.upper())
+            answer=answer.upper()
+            pause()
 
     if(x==3):
-        print("Please enter a phrase in upper case")
-        answer=input()
-        print(answer.lower())
-        pause()
+        convert=True
+        while convert:
+            print("Please enter a phrase in upper case")
+            answer=input()
+            print(answer.lower())
+            pause()
     
     if(x==4):
-        print("Enter the value you want indexed")
-        answer=input()
-        print(answer.index())
-        pause()
+        convert=True
+        while convert:
+            print("Enter a phrase")
+            phrase=input()
+            print("Enter the character you want to find")
+            answer=input()
+            print(phrase.find(answer))
+            pause()
     
     if(x==5):
-        print("Enter the string you want to be split")
-        answer=input()
-        print(answer.split())
-        pause()
+        convert=True
+        while convert:
+            print("Enter the string you want to be split")
+            answer=input()
+            print(answer.split())
+            pause()
     
     if(x==6):
-        print("Input the phrase you would like to translate")
-        mydict= {83: 80}
-        answer=input()
-        print(answer.translate(mydict))
-        pause()
+        convert=True
+        while convert:
+            print("Input the phrase you would like to translate")
+            answer=input()
+            var1=answer.maketrans("a","X")
+            print(answer.translate(var1))
+            pause()
     
     if(x==7):
         print("Thank you for playing")
