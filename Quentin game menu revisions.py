@@ -44,18 +44,26 @@ def score():
     print(l3)
     print(l8)
 def pause():
-    print("Press enter to continue")
-    input()
+    print("Do you want to play again?")
+    var=input()
+    var=var.upper()
+    if "Y" in var:
+        return True
+    else:
+        return False
 
 while x !=7:  #loop is conditioned to an event
     x=menu()
-    if(x==1):        #if statement are selection or branching
-        print("Please enter a phrase in lower case")
-        answer=input()   #input is a function
-        print(answer.capitalize()) #is a method of strings and you have referred with "."
-        answer=answer.capitalize() #update variable to the new changed if i dont need original value
-        pause()
-        #let the user stay in the level and reuse it many times until they want to go back to the menu
+    if(x==1):  #if statement are selection or branching
+        convert=True
+        while convert:  #let the user stay in the level and reuse it many times until they want to go back to the menu
+            print("Level 1 chosen")   
+            print("Please enter a phrase in lower case")
+            answer=input()   #input is a function
+            print(answer.capitalize()) #is a method of strings and you have referred with "."
+            answer=answer.capitalize() #update variable to the new changed if i dont need original value
+            convert=pause()
+        
 
     if(x==2):
         print("Input a phrase with lower case letters")
@@ -81,11 +89,13 @@ while x !=7:  #loop is conditioned to an event
         answer=input()
         print(answer.split())
         pause()
+    
     if(x==6):
         print("Input the phrase you would like to translate")
-        answer=input()
         mydict= {83: 80}
+        answer=input()
         print(answer.translate(mydict))
         pause()
+    
     if(x==7):
         print("Thank you for playing")
