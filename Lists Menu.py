@@ -78,28 +78,16 @@ def option3():
     answer=input()
     if answer=="MJ":
         print("What you entered is in the list")
-    if answer !="MJ":
-        print("What you entered is not the list")
-    
-    if answer=="Lebron":
+    elif answer =="Lebron":
         print("What you entered is in the list")
-    if answer !="Lebron":
-        print("What you entered is not the list")
-    
-    if answer=="KD":
+    elif answer=="KD":
         print("What you entered is in the list")
-    if answer !="KD":
-        print("What you entered is not the list")
-
-    if answer=="Curry":
+    elif answer=="Curry":
         print("What you entered is in the list")
-    if answer !="Curry":
-        print("What you entered is not the list")
-
-    if answer=="Kawhi":
+    elif answer=="Kawhi":
         print("What you entered is in the list")
-    if answer !="Kawhi":
-        print("What you entered is not the list")
+    else:
+        print("What you entered is not in the list")
 
 def option4():
     print("Find the index of an element")
