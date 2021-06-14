@@ -23,11 +23,6 @@ while "Y" in answer:
     print("The player's name contains",counter,"letters")
     turns=10  #should we consider controlling this number when they miss
     guesses=""
-    for char in word: 
-        if char in guesses:
-            print(char,end=" ")
-        else:
-            print("_", end=" ")
     while turns>0 and counter >0:
         for char in word: 
             if char in guesses:
