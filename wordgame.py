@@ -20,12 +20,16 @@ while "Y" in answer:
     print("Good luck", name, "!")
     word=random.choice(gameWords)
     counter=len(word)
-    print(counter)
-    print(word)
+    print("The player's name contains",counter,"letters")
     turns=10  #should we consider controlling this number when they miss
     guesses=""
+    for char in word: 
+        if char in guesses:
+            print(char,end=" ")
+        else:
+            print("_", end=" ")
     while turns>0 and counter >0:
-        for char in word:
+        for char in word: 
             if char in guesses:
                 print(char,end=" ")
             else:
@@ -35,11 +39,16 @@ while "Y" in answer:
             turns -=1        #turns=turns-1
             print("Incorrect, you have", turns, "guesses left")
         else:
-            counter -=1
+            amt=word.count(newGuess)
+            counter-=amt
             print("Nice guess!")    
-        guesses += newGuess
-    
-    answer=input("\nWould you like to play again?" ).upper()
-
+            guesses += newGuess
+    if(counter==0):
+        print("You guessed the player!")
+        print("The player was",word)
+    else:
+        print("You ran out of guesses, better luck next time.")
+        print("The player was",word)
+    answer=input("\nWould you like to play again? ").upper()
 
 print(name,"thank you for playing")
