@@ -12,8 +12,9 @@ import os
 import sys
 import time
 import datetime
+os.system("cls")
 
-gameWords= ['lebron james','kevin durant','giannis antetokounmpo','kawhi leaonard',
+gameWords= ['lebron james','kevin durant','giannis antetokounmpo','kawhi leonard',
 'nikola jokic','damian lillard','james harden','jayson tatum','luka doncic',
 'anthony davis','stephen curry','joel embiid']
 
@@ -26,6 +27,8 @@ l6= "*         3 - Exit                   *"
 l7="***************************************"
 x=1
 score=0
+file= "Word_Game_1_HighScores.txt"
+dt=datetime.datetime.now()
 name=input("What is your name? ")
 def menu():
     print(l1)
@@ -49,20 +52,17 @@ def pause():
     else:
         return False
 
-def getSCORES():
-    fileNAME= "Word_Game_1_HighScores.txt"
-    dt=datetime.datetime.now()
-    FILE= open(fileNAME, 'w')
-    line= name + " had a score of " + str(score)
-    FILE.write(str(dt))
-    FILE.write(line)
-    FILE.write("\n")
-    FILE.close
-    time.sleep(0.5)
-    FILE= open(fileNAME, 'r')
-    print(FILE.read())
-    input("press enter when you no longer want to see scores")
-    FILE.close()
+def printSCORES():
+    FileRead=open(file,'r')
+    print(FileRead.read())
+    FileRead.close
+
+def updateSCORES():
+    FileWrite=open(file,'a')
+    line=name+"\t"+"GUESSED"+"\t"+str(score)+"\t"+"PLAYER(S) CORRECTLY IN A ROW ON"+"\t"+str(dt.strftime("%A"))+" "+str(dt.day)+"/"+str(dt.month)+ "/"+ str(dt.year)
+    FileWrite.write("\n"+line)
+    FileWrite.close
+
 
 
 def playGAME():
@@ -116,7 +116,8 @@ while x !=3:
     if (x==2):
         convert=True
         while convert:
-            getSCORES()
+            printSCORES()
+            updateSCORES()
             convert=pause()
     
     if (x==3):
