@@ -19,8 +19,7 @@ WHITE = [255,255,255]
 BLACK = [0,0,0]  
 
 # Word lists  
-gameWords= ['python','java','trackpad','computer','keyboard','geeks','laptop','headphones','charger','mouse','software','hardware']  
-
+gameWords= ['lebron','kd','giannis','kawhi', 'jokic','dame','harden','tatum','luka', 'ad','steph','embiid']
 # load images to list  
 images = []  
 for i in range(7):  
@@ -81,22 +80,23 @@ def dis_message(message):
     text =TitleFont.render(message,1,BLACK) 
     screen.blit(text, (200,200)) 
     pygame.display.update() 
-    pygame.time.delay(1)
+    pygame.time.delay(2000)
 
-def cont():
-    screen.fill(WHITE)
-    msg="Would you like to play again?"
-    msg2="Press 1 to play again, press 2 to exit"
-    text1=TitleFont.render(msg,1,BLACK)
-    text2= TitleFont.render(msg2,1,BLACK)
-    screen.blit(text1, (200,100))
-    screen.blit(text2, (200,200))
-    pygame.display.update
-    keyBoardKey=pygame.key.get_pressed()
-    if keyBoardKey[pygame.K_1]:
-        print("Goodbye")
-    if keyBoardKey[pygame.K_2]:
-        pygame.quit
+# def cont():
+#     screen.fill(WHITE)
+#     msg="Would you like to play again?"
+#     msg2="Press 1 to play again, press 2 to exit"
+#     text1=TitleFont.render(msg,1,BLACK)
+#     text2= TitleFont.render(msg2,1,BLACK)
+#     screen.blit(text1, (200,100))
+#     screen.blit(text2, (200,200))
+#     pygame.display.update
+#     keyBoardKey=pygame.key.get_pressed()
+#     if keyBoardKey[pygame.K_1]:
+#         updateWord
+#         updateScreen
+#     if keyBoardKey[pygame.K_2]:
+#         pygame.quit
 
 #always have a way to close your screen  
 
@@ -130,13 +130,12 @@ while check:
             won=False 
             break 
     if won: 
-        dis_message("You Won!!!")
-        cont() 
+        dis_message("You Won!!!") 
         break
 
     if turns == 6: 
         dis_message("You lost") 
-        cont()
+        break
 
 pygame.quit()  
 sys.exit()  
