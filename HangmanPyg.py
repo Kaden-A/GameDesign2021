@@ -1,4 +1,4 @@
-# Maria Suarez  
+#Kaden Alibhai
 # Create a Hanggman version of the game:  
 # Use images in a list, Use Fonts, render them  
 
