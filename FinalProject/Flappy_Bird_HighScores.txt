@@ -1,20 +1,11 @@
 Kaden Scored 100
 Kaden	SCORED	0	POINTS	Thursday 24/6/2021
 Kaden	SCORED	0	POINTS	Thursday 24/6/2021
-& C:/Users/alibhaik24/AppData/Local/Microsoft/WindowsApps/python3.8.exe "c:/Users/alibhaik24/OneDrive - Greenhill School/Desktop/GameDesign2021/FinalProject/FinalGame.py"	SCORED	0	POINTS	Thursday 24/6/2021
-& C:/Users/alibhaik24/AppData/Local/Microsoft/WindowsApps/python3.8.exe "c:/Users/alibhaik24/OneDrive - Greenhill School/Desktop/GameDesign2021/FinalProject/FinalGame.py"	SCORED	0	POINTS	Thursday 24/6/2021
 Kaden	SCORED	0	POINTS	Thursday 24/6/2021
 Kaden	SCORED	0	POINTS	Thursday 24/6/2021
 Kaden	SCORED	0	POINTS	Thursday 24/6/2021
 Kaden	SCORED	0	POINTS	Thursday 24/6/2021
 Kaden	SCORED	0	POINTS	Thursday 24/6/2021
-K	SCORED	11	POINTS	Thursday 24/6/2021
-K	SCORED	0	POINTS	Thursday 24/6/2021
-KD	SCORED	13	POINTS	Thursday 6/24/2021	AT<built-in method time of datetime.datetime object at 0x000001BDACCD6930>
-KD	SCORED	0	POINTS	Thursday 6/24/2021	AT<built-in method time of datetime.datetime object at 0x000001BDACCD6930>
-Kaden	SCORED	0	POINTS	Thursday 6/24/2021	AT<module 'time' (built-in)>
-Kaden	SCORED	11	POINTS	Thursday 6/24/2021	AT<module 'time' (built-in)>
-Kaden	SCORED	0	POINTS	Thursday 6/24/2021	AT<module 'time' (built-in)>
 Kaden	SCORED	2	POINTS	Friday 6/25/2021
 Kaden	SCORED	2	POINTS	Friday 6/25/2021
 Kaden	SCORED	0	POINTS	Friday 6/25/2021
@@ -31,3 +22,11 @@ k	SCORED	4	POINTS	Friday 6/25/2021
 KD	SCORED	2	POINTS	Friday 6/25/2021
 KD	SCORED	34	POINTS	Friday 6/25/2021
 K	SCORED	4	POINTS	Friday 6/25/2021
+Kaden	SCORED	0	POINTS	Friday 6/25/2021
+Kaden	SCORED	9	POINTS	Friday 6/25/2021
+Kaden	SCORED	4	POINTS	Friday 6/25/2021
+Kaden	SCORED	0	POINTS	Friday 6/25/2021
+	SCORED	1	POINTS	Friday 6/25/2021
+	SCORED	1	POINTS	Friday 6/25/2021
+	SCORED	0	POINTS	Friday 6/25/2021
+	SCORED	0	POINTS	Friday 6/25/2021
