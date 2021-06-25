@@ -15,3 +15,19 @@ KD	SCORED	0	POINTS	Thursday 6/24/2021	AT<built-in method time of datetime.dateti
 Kaden	SCORED	0	POINTS	Thursday 6/24/2021	AT<module 'time' (built-in)>
 Kaden	SCORED	11	POINTS	Thursday 6/24/2021	AT<module 'time' (built-in)>
 Kaden	SCORED	0	POINTS	Thursday 6/24/2021	AT<module 'time' (built-in)>
+Kaden	SCORED	2	POINTS	Friday 6/25/2021
+Kaden	SCORED	2	POINTS	Friday 6/25/2021
+Kaden	SCORED	0	POINTS	Friday 6/25/2021
+Kaden	SCORED	3	POINTS	Friday 6/25/2021
+Kaden	SCORED	2	POINTS	Friday 6/25/2021
+Kaden	SCORED	0	POINTS	Friday 6/25/2021
+Kaden	SCORED	7	POINTS	Friday 6/25/2021
+Kaden	SCORED	0	POINTS	Friday 6/25/2021
+k	SCORED	14	POINTS	Friday 6/25/2021
+k	SCORED	0	POINTS	Friday 6/25/2021
+k	SCORED	3	POINTS	Friday 6/25/2021
+k	SCORED	0	POINTS	Friday 6/25/2021
+k	SCORED	4	POINTS	Friday 6/25/2021
+KD	SCORED	2	POINTS	Friday 6/25/2021
+KD	SCORED	34	POINTS	Friday 6/25/2021
+K	SCORED	4	POINTS	Friday 6/25/2021

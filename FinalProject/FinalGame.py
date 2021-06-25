@@ -61,9 +61,9 @@ def Level1UNDERWATER():
 
 
 	#load images
-	bg = pygame.image.load('img/bg2.jpg')
-	ground_img = pygame.image.load('img/ground.png')
-	button_img = pygame.image.load('img/restart.png')
+	bg = pygame.image.load('FinalProject\FinalProjectImages/bg2.jpg')
+	ground_img = pygame.image.load('FinalProject\FinalProjectImages\ground.png')
+	button_img = pygame.image.load('FinalProject\FinalProjectImages/restart.png')
 
 
 	#function for outputting text onto the screen
@@ -87,7 +87,7 @@ def Level1UNDERWATER():
 			self.index = 0
 			self.counter = 0
 			for num in range (1, 4):
-				img = pygame.image.load(f"img/bird{num}.png")
+				img = pygame.image.load(f"FinalProject\FinalProjectImages/bluebird{num}.png")
 				self.images.append(img)
 			self.image = self.images[self.index]
 			self.rect = self.image.get_rect()
@@ -137,7 +137,7 @@ def Level1UNDERWATER():
 
 		def __init__(self, x, y, position):
 			pygame.sprite.Sprite.__init__(self)
-			self.image = pygame.image.load("img/pipe2.png")
+			self.image = pygame.image.load("FinalProject\FinalProjectImages\pipe2.png")
 			self.rect = self.image.get_rect()
 			#position variable determines if the pipe is coming from the bottom or top
 			#position 1 is from the top, -1 is from the bottom
@@ -215,7 +215,7 @@ def Level1UNDERWATER():
 				if bird_group.sprites()[0].rect.left > pipe_group.sprites()[0].rect.right:
 					score += 1
 					pass_pipe = False
-		draw_text(str(score), font, WHITE, int(WIDTH / 2), 20)
+		draw_text(str(score), font, PURPLE, int(WIDTH / 2), 20)
 
 
 		#look for collision
@@ -276,9 +276,9 @@ def Level2NIGHTMODE():
 
 
 	#load images
-	bg = pygame.image.load('img/bg.png')
-	ground_img = pygame.image.load('img/ground.png')
-	button_img = pygame.image.load('img/restart.png')
+	bg = pygame.image.load('FinalProject\FinalProjectImages/bg.png')
+	ground_img = pygame.image.load('FinalProject\FinalProjectImages\ground.png')
+	button_img = pygame.image.load('FinalProject\FinalProjectImages/restart.png')
 
 
 	#function for outputting text onto the screen
@@ -302,7 +302,7 @@ def Level2NIGHTMODE():
 			self.index = 0
 			self.counter = 0
 			for num in range (1, 4):
-				img = pygame.image.load(f"img/bird{num}.png")
+				img = pygame.image.load(f"FinalProject\FinalProjectImages/yellowbird{num}.png")
 				self.images.append(img)
 			self.image = self.images[self.index]
 			self.rect = self.image.get_rect()
@@ -352,7 +352,7 @@ def Level2NIGHTMODE():
 
 		def __init__(self, x, y, position):
 			pygame.sprite.Sprite.__init__(self)
-			self.image = pygame.image.load("img/pipe.png")
+			self.image = pygame.image.load("FinalProject\FinalProjectImages\pipe.png")
 			self.rect = self.image.get_rect()
 			#position variable determines if the pipe is coming from the bottom or top
 			#position 1 is from the top, -1 is from the bottom
@@ -482,7 +482,7 @@ def Level3HARD():
 	scroll_speed = 4
 	flying = False
 	game_over = False
-	pipe_gap = 125
+	pipe_gap = 150
 	pipe_frequency = 1500 #milliseconds
 	last_pipe = pygame.time.get_ticks() - pipe_frequency
 	score = 0
@@ -490,9 +490,9 @@ def Level3HARD():
 
 
 	#load images
-	bg = pygame.image.load('img/bg1.png')
-	ground_img = pygame.image.load('img/ground.png')
-	button_img = pygame.image.load('img/restart.png')
+	bg = pygame.image.load('FinalProject\FinalProjectImages/bg1.png')
+	ground_img = pygame.image.load('FinalProject\FinalProjectImages\ground.png')
+	button_img = pygame.image.load('FinalProject\FinalProjectImages/restart.png')
 
 
 	#function for outputting text onto the screen
@@ -516,7 +516,7 @@ def Level3HARD():
 			self.index = 0
 			self.counter = 0
 			for num in range (1, 4):
-				img = pygame.image.load(f"img/bird{num}.png")
+				img = pygame.image.load(f"FinalProject\FinalProjectImages/redbird{num}.png")
 				self.images.append(img)
 			self.image = self.images[self.index]
 			self.rect = self.image.get_rect()
@@ -566,7 +566,7 @@ def Level3HARD():
 
 		def __init__(self, x, y, position):
 			pygame.sprite.Sprite.__init__(self)
-			self.image = pygame.image.load("img/pipe1.png")
+			self.image = pygame.image.load("FinalProject\FinalProjectImages\pipe1.png")
 			self.rect = self.image.get_rect()
 			#position variable determines if the pipe is coming from the bottom or top
 			#position 1 is from the top, -1 is from the bottom
