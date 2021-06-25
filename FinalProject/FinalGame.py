@@ -697,13 +697,16 @@ def Main_Menu():
 	level3_img= pygame.image.load("FinalProject\FinalProjectImages\Level3.png").convert_alpha()
 	exit_img = pygame.image.load('FinalProject\FinalProjectImages\Quit.png').convert_alpha()
 	scores_img = pygame.image.load('FinalProject\FinalProjectImages\HighSCORES.png').convert_alpha()
+	instructions_img= pygame.image.load('FinalProject\FinalProjectImages\Instructions.png').convert_alpha()
 
 	#create button instances
-	level1_button = button.Button(250, 15, level1_img, 0.6)
-	level2_button= button.Button(205,150, level2_img, 0.6)
-	level3_button= button.Button(250,325, level3_img, 0.6)
-	exit_button = button.Button(275, 500, exit_img,0.8)
-	scores_button= button.Button(175,650, scores_img,0.8)
+	level1_button = button.Button(275, -10, level1_img, 0.5)
+	level2_button= button.Button(240,125, level2_img, 0.5)
+	level3_button= button.Button(275,280, level3_img, 0.5)
+	instructions_button=button.Button(130,400, instructions_img,0.7)
+	exit_button = button.Button(285, 565, exit_img,0.7)
+	scores_button= button.Button(200,700, scores_img,0.7)
+
 
 	#game loop
 	run = True
@@ -716,9 +719,17 @@ def Main_Menu():
 			Level2NIGHTMODE()
 		if level3_button.draw(screen):
 			Level3HARD()
+		if instructions_button.draw(screen): #instructions print in the terminal
+			print("Welcome to Flappy Bird!")
+			print("The goal of the game is to go through as many pipes as you can without touching them")
+			print("Your run ends once you touch a pipe or the ground")
+			print("Choose a level to begin, they get increasingly harder. The higher the level, the harder it gets.")
+			print("To make the bird move, click the left mouse button")
+			print("To return to the main menu from a level, click the 'X' in the top right of the window")
+			print("Best of luck!")
 		if exit_button.draw(screen):
 			QUIT()
-		if scores_button.draw(screen):
+		if scores_button.draw(screen): #scores print in the terminal
 		    printSCORES()
 		    updateSCORES(score)
 
